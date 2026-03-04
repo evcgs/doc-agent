@@ -1,18 +1,15 @@
-# CalendarAgent
+---
+name: calendar-agent
+description: CalendarAgent - 日程管理专家智能体。专注于日程管理、会议协调、提醒服务和时间管理。使用当需要处理日历日程、安排会议、设置提醒、时区转换等相关任务时。
+---
 
-📅 日程管理专家智能助手
+# CalendarAgent - 日程管理专家智能体
+
+日程管理专家智能助手，专注于日程管理、会议协调、提醒服务和时间管理。
 
 ---
 
-## 项目简介
-
-CalendarAgent 是一个专门负责日程管理的智能助手，专注于日程管理、会议协调、提醒服务和时间管理。
-
-可以作为独立的OpenClaw Agent使用，也可以通过Docker部署。
-
----
-
-## ✨ 核心能力
+## 核心能力
 
 ### 1. 日程管理
 - 查询和查看日历日程
@@ -38,40 +35,30 @@ CalendarAgent 是一个专门负责日程管理的智能助手，专注于日程
 
 ---
 
-## 🚀 快速开始
+## 使用场景
 
-### 方式一：OpenClaw 直接安装（推荐）
+**什么时候使用这个技能：**
 
-详见 [INSTALL.md](INSTALL.md)
+- 用户询问如何管理日程安排
+- 需要安排会议或检查时间冲突
+- 需要设置日程提醒
+- 需要进行时区转换
+- 任何与日历、日程、会议相关的任务
 
-```bash
-# 复制到OpenClaw agents目录
-cp -r CalendarAgent ~/.openclaw/agents/CalendarAgent
+**什么时候不使用这个技能：**
 
-# 重启OpenClaw
-openclaw restart
-```
-
-### 方式二：Docker 安装
-
-详见 [INSTALL.md](INSTALL.md)
-
-```bash
-# 构建并启动
-docker-compose up -d
-
-# 查看日志
-docker-compose logs -f
-```
+- 文档管理、知识库操作（使用DocAgent）
+- 通用问题处理（使用Main Agent）
+- 与日程管理无关的任务
 
 ---
 
-## 📁 项目结构
+## 项目结构
 
 ```
 CalendarAgent/
-├── SKILL.md                    # 技能定义（参考OpenClaw技能标准）
-├── README.md                   # 项目说明（本文件）
+├── SKILL.md                    # 技能定义（本文件）
+├── README.md                   # 项目说明
 ├── INSTALL.md                  # 安装指南
 ├── IDENTITY.md                 # 身份定义
 ├── SOUL.md                     # 个性和行为准则
@@ -90,13 +77,24 @@ CalendarAgent/
 ├── assets/                     # 资源文件
 ├── agent-tracker/              # Agent追踪器
 ├── skills/                     # 专用技能
-├── memory/                     # 记忆文件
-└── .openclaw/                  # OpenClaw配置
+└── memory/                     # 记忆文件
 ```
 
 ---
 
-## 💡 特点
+## 安装方式
+
+### 方式一：OpenClaw 直接安装
+
+详见 [INSTALL.md](INSTALL.md)
+
+### 方式二：Docker 安装
+
+详见 [INSTALL.md](INSTALL.md)
+
+---
+
+## 特点
 
 - **有条理**：做事有条不紊，注重细节
 - **守时**：时间和日程需要精确，关注时区、冲突和截止日期
@@ -104,7 +102,7 @@ CalendarAgent/
 
 ---
 
-## 🔒 边界约束
+## 边界约束
 
 - 尊重日历隐私和共享设置
 - 仔细检查会议时间和参会人员列表
@@ -113,7 +111,7 @@ CalendarAgent/
 
 ---
 
-## 🤝 多Agent协作关系
+## 多Agent协作关系
 
 | 协作 Agent | 协作方式 | 分工边界 |
 |-----------|---------|---------|
@@ -122,18 +120,12 @@ CalendarAgent/
 
 ---
 
-## 📚 相关文档
+## 相关资源
 
-- [SKILL.md](SKILL.md) - 技能定义（参考OpenClaw技能标准）
-- [INSTALL.md](INSTALL.md) - 详细安装指南
+- [README.md](README.md) - 项目详细说明
+- [INSTALL.md](INSTALL.md) - 安装指南
 - [SYSTEM.md](SYSTEM.md) - 系统提示词
 - [SOUL.md](SOUL.md) - 个性和行为准则
-
----
-
-## 📋 许可证
-
-本项目遵循相关许可证。
 
 ---
 

@@ -4,11 +4,18 @@ _Local configuration and credentials for CalendarAgent_
 
 ## Feishu Credentials
 
-CalendarAgent is configured with dedicated Feishu robot credentials:
+⚠️ **重要：请在部署前配置以下凭证**
 
-- **App ID:** cli_a92e72dd16b8dcc7
-- **App Secret:** ohLrgJmOXLjyMmYpqhuxthMNhxPTxhKl
+CalendarAgent 需要配置飞书机器人凭证：
+
+- **App ID:** `需要配置`
+- **App Secret:** `需要配置`
 - **Account ID:** calendaragent
+
+**配置方式：**
+1. 在飞书开放平台创建应用
+2. 获取 App ID 和 App Secret
+3. 填入本文件或环境变量
 
 ## Capabilities
 
@@ -23,8 +30,8 @@ CalendarAgent has access to the following Feishu tools:
 
 ## Agent Directory
 
-- **Agent State:** /Users/evcgs/.openclaw/agents/CalendarAgent
-- **Workspace:** /Users/evcgs/.openclaw/agents/CalendarAgent/workspace
+- **Agent State:** `~/.openclaw/agents/CalendarAgent`
+- **Workspace:** `~/.openclaw/agents/CalendarAgent/workspace`
 
 ---
 
