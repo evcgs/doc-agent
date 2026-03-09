@@ -1,38 +1,35 @@
-# TOOLS.md - CalendarAgent Tools
+# TOOLS.md - Local Notes
 
-_Local configuration and credentials for CalendarAgent_
+Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
 
-## Feishu Credentials
+## What Goes Here
 
-⚠️ **重要：请在部署前配置以下凭证**
+Things like:
 
-CalendarAgent 需要配置飞书机器人凭证：
+- Camera names and locations
+- SSH hosts and aliases
+- Preferred voices for TTS
+- Speaker/room names
+- Device nicknames
+- Anything environment-specific
 
-- **App ID:** `需要配置`
-- **App Secret:** `需要配置`
-- **Account ID:** calendaragent
+## DocAgent 专用配置
 
-**配置方式：**
-1. 在飞书开放平台创建应用
-2. 获取 App ID 和 App Secret
-3. 填入本文件或环境变量
+### 飞书应用配置
+- **App ID**: `【需要替换为你的飞书 App ID】`
+- **App Secret**: `【需要替换为你的飞书 App Secret】`
+- **权限范围**: 
+  - 文档读写权限：`docx:document`
+  - Wiki编辑权限：`wiki:wiki`
+  - 云存储管理权限：`drive:drive`
+  - 多维表格操作权限：`bitable:app`
 
-## Capabilities
-
-CalendarAgent has access to the following Feishu tools:
-
-- **feishu_doc** - Document read/write operations
-- **feishu_wiki** - Knowledge base navigation and editing
-- **feishu_drive** - Cloud storage file management
-- **feishu_bitable** - Multidimensional table operations
-- **feishu_chat** - Chat operations
-- **feishu_app_scopes** - App permission management
-
-## Agent Directory
-
-- **Agent State:** `~/.openclaw/agents/CalendarAgent`
-- **Workspace:** `~/.openclaw/agents/CalendarAgent/workspace`
+### 可用工具
+- feishu_doc：飞书文档操作工具
+- feishu_wiki：飞书知识库操作工具
+- feishu_drive：飞书云存储操作工具
+- feishu_bitable：飞书多维表格操作工具
 
 ---
 
-This file contains CalendarAgent's specific configuration and tool information.
+Add whatever helps you do your job. This is your cheat sheet.
